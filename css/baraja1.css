@@ -1,0 +1,32 @@
+#escalera {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbff 100%);
+}
+
+#escalera .card {
+  position: absolute;
+  width: 120px; 
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.18s ease, top 0.18s ease;
+  cursor: default;
+}
+
+#escalera .card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+#escalera .c1 { top: 60px; left: 48%; z-index: 1; transform: translateX(-50%) rotate(-6deg); }
+#escalera .c2 { top: 92px; left: 50%; z-index: 2; transform: translateX(-50%) rotate(-3deg); }
+#escalera .c3 { top: 124px; left: 52%; z-index: 3; transform: translateX(-50%) rotate(0deg); }
+#escalera .c4 { top: 156px; left: 54%; z-index: 4; transform: translateX(-50%) rotate(3deg); }
+#escalera .c5 { top: 188px; left: 56%; z-index: 5; transform: translateX(-50%) rotate(6deg); }
+
+#escalera .card:hover {
+  transform: translateX(-50%) scale(1.08) rotate(0deg);
+  z-index: 999;
+}

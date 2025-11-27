@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #2C3E50;
+    --color-secondary: #3498DB;
+    --color-accent: #E74C3C;
+    --color-light: #ECF0F1;
+    --color-dark: #2C3E50;
+    --color-yellow: #FFF9C4;
+    --color-navy: #003366;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: var(--color-yellow);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.top-banner {
+    background-color: var(--color-navy);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.logo {
+    height: 60px;
+}
+
+.main-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.main-header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-header p {
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+}
+
+.student-info {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Exercises Section */
+.exercises-section {
+    margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+}
+
+.exercises-section h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.exercise-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.exercise-card:hover {
+    transform: translateY(-3px);
+}
+
+.exercise-info h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.exercise-btn {
+    display: inline-block;
+    background: var(--color-secondary);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.exercise-btn:hover {
+    background: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.exercise-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.main-footer {
+    background: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer-links a {
+    color: var(--color-light);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.footer-links a:hover {
+    color: var(--color-secondary);
+}
+
+
+@media (max-width: 768px) {
+    .exercise-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .main-header h1 {
+        font-size: 2rem;
+    }
+}
